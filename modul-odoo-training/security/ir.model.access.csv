@@ -1,2 +1,2 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_rodolphe-chabi-module-odoo-training_rodolphe-chabi-module-odoo-training,rodolphe-chabi-module-odoo-training.rodolphe-chabi-module-odoo-training,model_rodolphe-chabi-module-odoo-training_rodolphe-chabi-module-odoo-training,base.group_user,1,1,1,1
+access_training_session,access.training.session,model_training_session,base.group_user,1,1,1,0
