@@ -1,16 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
 <odoo>
     <data>
         <record id="action_training_session" model="ir.actions.act_window">
-            <field name="name">model.name.action</field>
+            <field name="name">Sessions dapprentissage</field>
             <field name="type">ir.actions.act_window</field>
             <field name="res_model">training.session</field>
             <field name="view_mode">tree,form</field>
-            <field name="view_type">form</field>
             <field name="context">{}</field>
-            <field name="domain">{}</field>
+            <field name="domain">[]</field>
             <field name="help" type="html">
                 <p class="oe_view_nocontent_create">
-                    Créer les sessions d'apprentissage
+                    Créer des sessions d'apprentissage
                 </p><p>
                     Ex : XXX
                 </p>
@@ -18,22 +18,39 @@
         </record>
     </data>
 
-    <!-- search view -->
-
-    <!-- list view -->
-
     <!-- tree view -->
-    <!-- <record id="model_name_view_tree" model="ir.ui.view">
-        <field name="name">model.name.view.tree</field>
-        <field name="model">model.name</field>
+    <record id="training_session_tree" model="ir.ui.view">
+        <field name="name">training.session.tree</field>
+        <field name="model">training.session</field>
         <field name="arch" type="xml">
-            <tree>
-                                
+            <tree string="Sessions dapprentissage">
+                <field name="name"/>
+                <field name="start_date"/>
             </tree>
         </field>
-    </record> -->
-
+    </record>
     <!-- form view -->
+    <record id="training_session_form" model="ir.ui.view">
+        <field name="name">training.session.form</field>
+        <field name="model">training.session</field>
+        <field name="arch" type="xml">
+            <form string="Sessions dapprentissage">
+                <sheet>
+                    <!-- <div class="oe_button_box" name="button_box">
+                        <button name="toggle_active" type="object" class="oe_stat_button" icon="fa-archive">
+                            <field name="active" widget="boolean_button" options='{"terminology": "archive"}'/>
+                        </button>
+                    </div> -->
+                    
+
+                    <group colspan="1" col="4">
+                        <field name="name" placeholder="Cours" help="RR"/>
+                        <field name="start_date" placeholder="Date de début du cours" help="TT"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
 
     <!-- Menu bar -->
     <menuitem id="menu_training" name="Sessions d'apprentissage" sequence="7"/>

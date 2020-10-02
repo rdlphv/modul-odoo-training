@@ -18,7 +18,7 @@
     'depends': ['base'],
     'data': [
         'security/ir.model.access.csv',
-        'views/session_view.xml',
+        'views/training_session.xml',
         # 'views/templates.xml',
     ],
     # 'license': 'AGPL-3',
