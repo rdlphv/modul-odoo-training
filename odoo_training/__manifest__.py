@@ -12,7 +12,7 @@
 
     'author': "Rodolphe_ci",
     'website': "https://www.linkedin.com/in/rodolphe-ci",
-    'maintainer': 'Rodolphe CHABI ILOUGBADE'
+    'maintainer': 'Rodolphe CHABI ILOUGBADE',
     'category': 'Training',
     'version': '1.0',
     'depends': ['base'],
