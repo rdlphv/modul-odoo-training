@@ -26,6 +26,6 @@
     'auto_install': False,
     'installable': True,
     'image': [
-        'static/description/icon.jpg',
+        'static/description/icon.png',
     ],
 }
